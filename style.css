@@ -1,0 +1,56 @@
+body {
+  background: rgba(59, 70, 100, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#output {
+  background: rgba(24, 31, 50, 1);
+  width: 54.6%;
+  padding: 20px;
+  text-align: right;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 55px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+div.Calc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.buttons {
+  background: rgba(37, 45, 68, 1);
+  margin: 5px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  border-radius: 10px;
+}
+input[type="button"] {
+  padding: 15px;
+  font-size: 30px;
+  border: none;
+  background: rgba(234, 227, 219, 1);
+  color: rgba(59, 70, 100, 1);
+  cursor: pointer;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#reset,
+#equal {
+  grid-column: span 2; /* Span two columns */
+  color: white;
+  background: rgba(209, 63, 48, 1);
+}
+#reset,
+#del {
+  background: rgba(100, 114, 153, 1);
+  color: white;
+}
