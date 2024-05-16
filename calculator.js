@@ -14,7 +14,12 @@ function del() {
 
 function evaluation() {
   try {
-    out.value = eval(out.value).toFixed(2);
+    let result = eval(out.value);
+    if (result % 1 != 0) {
+      out.value = eval(out.value).toFixed(2);
+    } else {
+      out.value = result;
+    }
   } catch (error) {
     out.value = "Error";
   }
